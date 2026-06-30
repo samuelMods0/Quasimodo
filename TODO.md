@@ -2,7 +2,7 @@ Bell Scheduler Project
 ======================
 
 ## Phase 1 - Research
-- [ ] Create GitHub repository
+- [x] Create GitHub repository
 - [ ] Contact American Time about API/support
 - [ ] Identify firmware version of AllSync IQ
 - [ ] Determine authentication method
@@ -11,10 +11,10 @@ Bell Scheduler Project
 - [ ] Document discovered endpoints (if permitted)
 
 ## Phase 2 - Development Environment
-- [ ] Install Python
-- [ ] Create virtual environment
-- [ ] Create Django project
-- [ ] Set up Git
+- [x] Install Python
+- [x] Create virtual environment
+- [x] Create Django project
+- [x] Set up Git
 - [ ] Install DaisyUI + Tailwind
 - [ ] Create base template
 - [ ] Create navigation layout
@@ -25,7 +25,7 @@ Bell Scheduler Project
 - [ ] Read schedule
 - [ ] Write schedule
 - [ ] Error handling
-- [ ] Logging
+- [x] Logging
 
 ## Phase 4 - Interface
 - [ ] Dashboard

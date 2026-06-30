@@ -1,0 +1,29 @@
+{
+  "name": "quasimodo",
+  "version": "1.0.0",
+  "description": "Quasimodo is a web-based management interface for school bell scheduling systems. It is being developed as a service project to provide administrators with a modern, intuitive alternative to the default scheduling interface while maintaining compatibility with existing hardware.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelMods0/Quasimodo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/samuelMods0/Quasimodo/issues"
+  },
+  "homepage": "https://github.com/samuelMods0/Quasimodo#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "daisyui": "^5.6.6",
+    "tailwindcss": "^4.3.2"
+  }
+}

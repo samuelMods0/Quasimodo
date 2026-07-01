@@ -42,12 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_cotton',
 
     # Third-Party
     
 
     # local apps
     'apps.dashboard',
+    'apps.scheduler',
+    'apps.core',
 ]
 
 MIDDLEWARE = [

@@ -11,10 +11,10 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
-<body>
+<body class="bg-base-200 text-base-content min-h-screen">
     {% include "components/navbar.html" %}
 
-    <main>
+    <main class="container mx-auto p-8">
 
         {% block content %}
         {% endblock %}

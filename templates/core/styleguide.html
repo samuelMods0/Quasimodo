@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}
+Quasimodo Developer Styleguide
+{% endblock %}
+
+{% block content %}
+
+<div class="container mx-auto p-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <c-card>
+            <div class="card-body">
+                <h2 class="card-title">Buttons</h2>
+                <button class="btn w-24">Default</button>
+                <button class="btn btn-primary w-24">Primary</button>
+                <button class="btn btn-secondary w-24">Secondary</button>
+                <button class="btn btn-accent w-24">Accent</button>
+                <button class="btn btn-error w-24">Danger</button>
+            </div>
+        </c-card>
+
+
+        <c-card>
+            <div class="card-body">
+                <h2 class="card-title">Status Badges</h2>
+                <div class="badge badge-success">Online</div>
+                <div class="badge badge-warning">Warning</div>
+                <div class="badge badge-error">Offline</div>
+                <div class="badge badge-info">Information</div>
+            </div>
+        </c-card>
+
+
+        <c-card>
+            <div class="card-body gap-4">
+                <h2 class="card-title">Clock Status</h2>
+                <div class="badge badge-success">
+                    Online
+                </div>
+                <div>
+                    <p class="text-sm opacity-70">
+                        Last Contact
+                    </p>
+                    <p>
+                        3 seconds ago
+                    </p>
+                </div>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">
+                        Refresh
+                    </button>
+                </div>
+            </div>
+        </c-card>
+
+        <c-card>
+            <div class="card-body">
+                <h2 class="card-title">Alerts</h2>
+                <div class="alert alert-success">
+                    <span>
+                        Clock communication successful.
+                    </span>
+                </div>
+                <div class="alert alert-warning">
+                    <span>
+                        Schedule contains unpublished changes.
+                    </span>
+                </div>
+                <div class="alert alert-error">
+                    <span>
+                        Unable to communicate with the clock.
+                    </span>
+                </div>
+                <div class="alert alert-info">
+                    <span>
+                        Summer schedule becomes active July 1.
+                    </span>
+                </div>
+            </div>
+        </c-card>
+
+
+        <c-card>
+            <div class="card-body">
+                <h2 class="card-title">Form</h2>
+                <label class="form-control">
+                    <span class="label-text">Name</span>
+                    <input
+                        type="text"
+                        class="input input-bordered"
+                        placeholder="Regular Friday">
+                </label>
+                <label class="form-control">
+                    <span class="label-text">
+                        Description
+                    </span>
+                    <textarea
+                        class="textarea textarea-bordered">
+                    </textarea>
+                </label>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </c-card>
+
+
+        <c-card>
+            <div class="card-body">
+                <h2 class="card-title">Table</h2>
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Event</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:30</td>
+                                <td>Period 1</td>
+                                <td>50 min</td>
+                            </tr>
+                            <tr>
+                                <td>9:20</td>
+                                <td>Passing</td>
+                                <td>5 min</td>
+                            </tr>
+                            <tr>
+                                <td>9:25</td>
+                                <td>Period 2</td>
+                                <td>50 min</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </c-card>
+    </div>
+</div>
+
+{% endblock %}

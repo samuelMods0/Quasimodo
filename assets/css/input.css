@@ -3,22 +3,3 @@
 @plugin "daisyui" {
     themes: emerald --default, business --prefersdark;
 }
-
-.bar {
-    min-height: 64rem;
-}
-
-.header-box {
-    display: flex;
-    flex-direction: row;
-}
-
-.left {
-    align-items: center;
-    float: left;
-}
-
-.right {
-    align-items: center;
-    float: right;
-}

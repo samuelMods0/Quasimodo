@@ -12,6 +12,7 @@
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -1772,6 +1773,22 @@
       padding-inline: calc(var(--size) / 2 - var(--border));
     }
   }
+  .navbar-end {
+    @layer daisyui.l1.l2.l3 {
+      display: inline-flex;
+      align-items: center;
+      width: 50%;
+      justify-content: flex-end;
+    }
+  }
+  .navbar-start {
+    @layer daisyui.l1.l2.l3 {
+      display: inline-flex;
+      align-items: center;
+      width: 50%;
+      justify-content: flex-start;
+    }
+  }
   .card-body {
     @layer daisyui.l1.l2.l3 {
       display: flex;
@@ -1916,9 +1933,6 @@
   .table {
     display: table;
   }
-  .min-h-64 {
-    min-height: calc(var(--spacing) * 64);
-  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -2019,11 +2033,35 @@
   .bg-base-100 {
     background-color: var(--color-base-100);
   }
+  .bg-base-100\/50 {
+    background-color: var(--color-base-100);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-base-100) 50%, transparent);
+    }
+  }
   .bg-base-200 {
     background-color: var(--color-base-200);
   }
+  .bg-base-200\/50 {
+    background-color: var(--color-base-200);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-base-200) 50%, transparent);
+    }
+  }
   .bg-base-300 {
     background-color: var(--color-base-300);
+  }
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  .bg-secondary\/50 {
+    background-color: var(--color-secondary);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-secondary) 50%, transparent);
+    }
   }
   .mask-repeat {
     mask-repeat: repeat;
@@ -2093,6 +2131,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
   .ease-out {
     --tw-ease: var(--ease-out);
     transition-timing-function: var(--ease-out);
@@ -2154,21 +2196,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-}
-.bar {
-  min-height: 64rem;
-}
-.header-box {
-  display: flex;
-  flex-direction: row;
-}
-.left {
-  align-items: center;
-  float: left;
-}
-.right {
-  align-items: center;
-  float: right;
 }
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=emerald]:checked),[data-theme=emerald] {

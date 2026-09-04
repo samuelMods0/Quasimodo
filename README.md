@@ -2,7 +2,9 @@
 
 Quasimodo is a web-based management interface for school bell scheduling systems. It is being developed as a service project to provide administrators with a modern, intuitive alternative to the default scheduling interface while maintaining compatibility with existing hardware.
 
-## Goals
+---
+
+# Goals
 
 * Simplify bell schedule creation and editing
 * Provide a clean, responsive user interface
@@ -10,7 +12,9 @@ Quasimodo is a web-based management interface for school bell scheduling systems
 * Support deployment on low-power hardware such as a Raspberry Pi
 * Maintain compatibility with existing scheduling hardware
 
-## Technology
+---
+
+# Technology
 
 * Python
 * Django
@@ -19,10 +23,20 @@ Quasimodo is a web-based management interface for school bell scheduling systems
 * Nginx (deployment)
 * Raspberry Pi OS
 
-## Project Status
+---
+
+# Project Status
 
 This project is currently in early development.
 
-## License
+---
+
+# License
 
 This project is licensed under the MIT License.
+
+---
+
+# Disclamer
+
+Much of the documentation was created by AI. However, little to no code was produced by AI.

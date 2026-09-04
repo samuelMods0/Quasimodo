@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="emerald">
+<html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>
-        {% block title %}
-            Quasimodo
-        {% endblock %}
+        Quasimodo — {{ page_title }}
     </title>
-    {% load static %}
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
 </head>
 <body class="bg-base-200 text-base-content min-h-screen">
-    {% include "components/navbar.html" %}
-
+    <header>
+        <div class="bg-base-300 bar">
+            <div class="left header-box">
+                <img src="{% static 'img/hunchback_icon.png' %}" height="80rem" width="80rem">
+                <h2>
+                    <strong>Quasimodo</strong> | <span>{{ page_title }}</span>
+                </h2>
+            </div>
+            <div class="right header-box">
+                
+            </div>
+        </div>
+    </header>
     <main class="container mx-auto p-8">
-
         {% block content %}
+
         {% endblock %}
-
     </main>
-
 </body>
-
 </html>

@@ -3,24 +3,32 @@
 {% block content %}
 
 <div class="hero min-h-screen">
-    <div class="hero-content text-center">
-        <div class="grid gap-6">
+    <div class="container mx-auto p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <c-card>
-                <h2 class="card-title">System Status</h2>
+                <div class="card-body">
+                    <h2 class="card-title">System Status</h2>
+                </div>
             </c-card>
             <c-card>
-                <h2 class="card-title">Active Schedule</h2>
+                <div class="card-body">
+                    <h2 class="card-title">Active Schedule</h2>
+                </div>
             </c-card>
             <c-card>
-                <h2 class="card-title">Calendar</h2>
+                <div class="card-body">
+                    <h2 class="card-title">Calendar</h2>
+                </div>
             </c-card>
             <c-card>
-                <h2 class="card-title">Templates</h2>
-                <ul>
-                    <li>Day</li>
-                    <li>Week</li>
-                    <li>Month</li>
-                </ul>
+                <div class="card-body">
+                    <h2 class="card-title">Templates</h2>
+                    <ul>
+                        <li>Day</li>
+                        <li>Week</li>
+                        <li>Month</li>
+                    </ul>
+                </div>
             </c-card>
         </div>
     </div>

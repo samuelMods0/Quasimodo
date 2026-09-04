@@ -12,25 +12,66 @@
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
 </head>
 <body class="bg-base-200 text-base-content min-h-screen">
-    <header>
-        <div class="navbar bg-base-100 shadow-md">
-            <div class="navbar-start">
-                <img src="{% static 'img/hunchback_icon.png' %}" height="40rem" width="40rem">
-            </div>
-            <div class="navbar-start">
-                <h2>
-                    <strong>Quasimodo</strong> | <span>{{ page_title }}</span>
-                </h2>
-            </div>
-            <div class="navbar-end">
-                
-            </div>
-        </div>
-    </header>
-    <main class="container mx-auto p-8">
-        {% block content %}
+    <div class="drawer drawer-end">
+        <input
+            id="navigation-drawer"
+            type="checkbox"
+            class="drawer-toggle"
+        >
+        <div class="drawer-content">
+            <header>
+                <div class="navbar bg-base-100 shadow-md">
+                    <div class="navbar-start">
+                        <img src="{% static 'img/hunchback_icon.png' %}" height="40rem" width="40rem">
+                    </div>
+                    <div class="navbar-center">
+                        <h2>
+                            <strong>Quasimodo</strong> | <span>{{ page_title }}</span>
+                        </h2>
+                    </div>
+                    <div class="navbar-end">
+                        <label for="navigation-drawer" class="btn btn-ghost btn-square" aria-label="Open navigation menu">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                />
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </header>
+            <main class="container mx-auto p-8 flex-1">
+                {% block content %}
 
-        {% endblock %}
-    </main>
+                {% endblock %}
+            </main>
+            <footer class="footer footer-horizontal footer-center gap-3 bg-base-300 p-6">
+                <span class="font-bold">Quasimodo</span>
+                <span class="text-sm opacity-70">AllSync IQ Master Clock Connect</span>
+                <a class="link link-hover text-sm" href="https://github.com/samuelMods0/Quasimodo">View Project on GitHub</a>
+            </footer>
+        </div>
+        <div class="drawer-side">
+            <label
+                for="navigation-drawer"
+                aria-label="Close navigation menu"
+                class="drawer-overlay"
+            ></label>
+            <ul class="menu bg-base-200 min-h-full w-80 p-4">
+                <li><a>Dashboard</a></li>
+                <li><a>Schedule</a></li>
+                <li><a>Templates</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

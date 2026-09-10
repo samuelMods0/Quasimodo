@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'apps.dashboard',
     'apps.scheduler',
     'apps.core',
+    'apps.clock',
 ]
 
 MIDDLEWARE = [

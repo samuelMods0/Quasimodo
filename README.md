@@ -31,12 +31,43 @@ This project is currently in early development.
 
 ---
 
+# Dev Notes
+
+Assuming that you have git, python, and pip already installed and from the project root:
+
+`python -m venv .venv`
+
+`source .venv/bin/activate`
+
+`pip install -r requirements.txt`
+
+Create `.env` with the variables from `.env.example`.
+Generate a Django secret key with the Django module:
+
+`python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"`
+
+or with the secrets module:
+
+`python -c "import secrets; print(secrets.token_urlsafe(50))"`
+
+For development, usually just set `DEBUG` to True.
+
+Give `CLOCK_IP` a blank string for now, there is nothing that actually communicates with it yet.
+
+To run the project:
+
+`python manage.py runserver <port>`
+
+at the root of the project.
+
+---
+
 # License
 
 This project is licensed under the MIT License.
 
 ---
 
-# Disclamer
+# Disclaimer
 
-Much of the documentation was created by AI. However, little to no code was produced by AI.
+Much of the documentation was created by AI. However, very little code was produced by AI.

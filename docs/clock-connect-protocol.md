@@ -112,7 +112,7 @@ The declared content type is:
 application/x-www-form-urlencoded
 ```
 
-Therefore a normal request looks conceptually like:
+Therefore, a normal request looks conceptually like:
 
 ```http
 POST /someEndpoint.htm HTTP/1.1
@@ -317,7 +317,7 @@ The JavaScript's internal object representation is zero-based, so it performs:
 internal schedule index = byte 4 - 1
 ```
 
-Therefore the wire representation is apparently:
+Therefore, the wire representation is apparently:
 
 ```text
 schedule 1 → byte 4 = 1
@@ -441,7 +441,7 @@ The JavaScript also allows the corresponding flags to communicate these special 
 
 A duration of zero is converted to one second by the Remote Connect JavaScript.
 
-Therefore Quasimodo should treat zero as invalid for a normal duration rather than sending it blindly.
+Therefore, Quasimodo should treat zero as invalid for a normal duration rather than sending it blindly.
 
 ---
 

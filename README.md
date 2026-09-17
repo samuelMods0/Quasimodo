@@ -33,7 +33,7 @@ This project is currently in early development.
 
 # Dev Notes
 
-Assuming that you have git, python, and pip already installed and from the project root:
+Assuming that you have git, python, and pip already installed, from the project root:
 
 `python -m venv .venv`
 
@@ -54,11 +54,9 @@ For development, usually just set `DEBUG` to True.
 
 Give `CLOCK_IP` a blank string for now, there is nothing that actually communicates with it yet.
 
-To run the project:
+To run the project from its root:
 
 `python manage.py runserver <port>`
-
-at the root of the project.
 
 ---
 

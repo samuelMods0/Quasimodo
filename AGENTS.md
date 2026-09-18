@@ -12,8 +12,10 @@ When suggesting an edit to a human, explain, don't tell. If the human doesn't kn
 
 ---
 
-# Best Practices
+# Best Practices & Philosophy
 
-Avoid suggesting new dependancies if they are not required.
-If a new dependancy is required no matter what, look for ways to centralize, even if migration is necessary.
-Again, suggest, and see what the human has to say. Any research you can add to back up a suggestion helps.
+Avoid suggesting new dependencies if they are not required.
+If a new dependency is required no matter what, look for ways to centralize, even if migration is necessary.
+Again: suggest, and see what the human has to say. Any research you can add to back up a suggestion helps.
+Avoid unnecessary abstractions. If a solution involves an unfamiliar concept, explain the concept. 
+Do not assume that the human understands the complex topics that you bring up if there is no history of them using it.

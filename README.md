@@ -1,10 +1,14 @@
 # Quasimodo
 
+---
+
+## Description
+
 Quasimodo is a web-based management interface for school bell scheduling systems. It is being developed as a service project to provide administrators with a modern, intuitive alternative to the default scheduling interface while maintaining compatibility with existing hardware.
 
 ---
 
-# Goals
+## Goals
 
 * Simplify bell schedule creation and editing
 * Provide a clean, responsive user interface
@@ -14,7 +18,7 @@ Quasimodo is a web-based management interface for school bell scheduling systems
 
 ---
 
-# Technology
+## Technology
 
 * Python
 * Django
@@ -25,13 +29,11 @@ Quasimodo is a web-based management interface for school bell scheduling systems
 
 ---
 
-# Project Status
-
-This project is currently in early development.
+# Development
 
 ---
 
-# Dev Notes
+## Setting up Development Environment
 
 Assuming that you have git, python, and pip already installed, from the project root:
 
@@ -60,12 +62,27 @@ To run the project from its root:
 
 ---
 
-# License
+## Working With AI
 
-This project is licensed under the MIT License.
+As seen elsewhere in the documentation, use of AI is not discouraged, but there should _never_ be extensive amounts of code that no human understands.
+Preferably, a human would write code while advised by an LLM for efficiency and debugging. Directly pasting AI-generated code is not acceptable for a long-term code base.
+Suggested uses:
+
+- LLM explains a concept, human writes code.
+- LLM suggests an approach to a problem, human implements.
+- LLM generates code, human rewrites in their own words.
+
+Notice what they have in common? 
+If the code is not _yours_, don't submit it.
+
+There are a few cases where AI-generated content is acceptable, mainly as a short-term patch so that development can continue in other areas.
+At the time of writing this, there are a few examples of AI-generated content:
+
+- Documentation of Allsync IQ Connection Protocol
+- Documentation of logging.
+- Documentation of Client and Server responsibilities.
+- Bit-wise Encoding/Decoding logic.
+
+This is not optimal. These files need to eventually be replaced or rewritten by human hands.
 
 ---
-
-# Disclaimer
-
-Much of the documentation was created by AI. However, very little code was produced by AI.

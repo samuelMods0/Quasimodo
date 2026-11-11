@@ -183,3 +183,4 @@ cython_debug/
 # Node.js
 node_modules/
 .vscode
+main.css
